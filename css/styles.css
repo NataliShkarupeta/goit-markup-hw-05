@@ -148,7 +148,7 @@ dd {
 }
 .header-icon{
     margin-right: 10px;
-    fill: #757575;
+    fill: currentColor;;
  }
 
 .header-nav-contact a{
@@ -303,7 +303,7 @@ dd {
     max-width: 270px;
 
     font-size: 14px;
-    line-height: 1.2;
+    line-height: 1.71;
 }
 
 .about-us .about+ .about{
@@ -455,21 +455,6 @@ dd {
 }
 
 /* ---------------------------постійні клієнти----------------- */
-/* .section-clients{
-    background-color: ;
-} */
-
-/* .com-sec-bloc-item:hover,
-.com-sec-bloc-item:focus {
-    background-color: var(--accent-color);
-
-}
-
-.com-sec-bloc-item:hover .icon,
-.com-sec-bloc-item:focus .icon {
-    fill: #ffffff;
-} */
-
 
 
 .client-namber{
@@ -487,7 +472,7 @@ dd {
     fill: #AFB1B8;
  }
 
- .clients-list .client-namber+ .client-namber{
+ .clients-list .client-item+ .client-item{
     margin-left: 30px;
  }
 
@@ -502,19 +487,9 @@ dd {
     fill: var(--accent-color);
 } 
    
-/* 
-.clients-list-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;   
-} */
-
 
 .clients-link {
    text-decoration: none;
-  
 }
 
 
@@ -523,7 +498,7 @@ dd {
 
 .container-footer{
     display: flex;
-    justify-content: ;
+   
     padding-top: 60px;
     padding-bottom: 60px;
     margin-left: auto;
@@ -547,6 +522,7 @@ dd {
 .footer-item{
     display: block;
     margin-bottom: 9px;
+    line-height: 1.71;
 }
 
 .footer-style{
@@ -597,7 +573,9 @@ dd {
 .footer-sec-blok-title {
     color:  #FFFFFF;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
+
 .footer-sec-blok-list,
 .command-blok-list {
     display: flex;
@@ -609,12 +587,13 @@ dd {
     fill: #AFB1B8;
 }
 
-.com-sec-bloc-item{
+
+.com-sec-bloc-link{
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #757575;
+    background-color: #ffffff;
     width: 44px;
     height: 44px;
     background-repeat: no-repeat;
@@ -624,26 +603,25 @@ dd {
     cursor: pointer;
 }
 
-
-.command-blok-list>.com-sec-bloc-item{
+.command-blok-item> .com-sec-bloc-link{
     background-color: #ffffff;
     
 } 
 
-.sec-bloc-item{
+.sec-bloc-link{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
 }
 
-.com-sec-bloc-item:hover,
-.com-sec-bloc-item:focus {
+.com-sec-bloc-link:hover,
+.com-sec-bloc-link:focus {
     background-color: var(--accent-color);
 
 }
 
-.com-sec-bloc-item:hover .icon,
-.com-sec-bloc-item:focus .icon {
+.com-sec-bloc-link:hover .icon,
+.com-sec-bloc-link:focus .icon {
     fill: #ffffff;
 }
 
@@ -654,12 +632,12 @@ dd {
 }
 
 
-.sec-bloc-item {
+/* .sec-bloc-item {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #757575;
+    background-color: rgba(255, 255, 255, 0.1);
     width: 44px;
     height: 44px;
     background-repeat: no-repeat;
@@ -667,11 +645,24 @@ dd {
    
     padding: 0;
     cursor: pointer;
+} */
+
+.footer-bloc-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+   
+    padding: 0;
+    cursor: pointer;
 }
 
-
-.sec-bloc-item:hover,
-.sec-bloc-item:focus{
+.footer-bloc-link:hover,
+.footer-bloc-link:focus{
     background-color: var(--accent-color);
 }
 
@@ -718,7 +709,7 @@ dd {
     display: flex;
     justify-content: center;
     
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     padding-left: 0;
 
     color: var(--title-text-color);
@@ -785,15 +776,13 @@ dd {
     font-size: 16px;
     line-height: 1.8;
     margin-top: 0;
-    margin-bottom: 20px;
+   
 }
 
-/*  колір основного тексту   #212121 */
-/* синій колір акцент 2196F3 */
-/* білий колір #FFFFFF */
+
   
 
-.ex{
+/* .ex{
     display:inline-block;
     width: 44px;
     height: 44px;
@@ -805,7 +794,7 @@ dd {
     padding: 0;
     cursor: pointer;
 
-}
+} */
 
 
 
