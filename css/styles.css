@@ -810,6 +810,8 @@ dd {
     width: calc ((100%-60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
+    transition:  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
 }
 
 .img-wrap{
@@ -892,23 +894,35 @@ dd {
     width: 100%;
     height: 100%;
     background-color:rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) scale(1);
+
 }  
+
 
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
+    transform: scale(0);
+}
+
+.backdrop.is-hidden .modal{
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.7);
 
     width: 528px;
     height: 581px;
 
-   background-color: #fff;
+    background-color: #fff;
+  
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
